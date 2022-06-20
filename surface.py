@@ -4,4 +4,4 @@ def area(length:float, width:float):
  
 length = float(input("insert the length of your room: ")
 width = float(input("insert the width of your room: ")
-print(f'the area of your room is: {area(length, width)}')
+print(f'the area of your room is: {area(length, width):f2}')
