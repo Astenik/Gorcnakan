@@ -8,9 +8,9 @@ while lst[i] != '':
 ind = 0
 ind1 = 1
 while ind < len(lst):
-         if lst[ind] == lst[ind1]:
-              lst.remove(lst[ind1])
-         ind += 1 
-         ind1 += 1 
+          if lst[ind] == lst[ind1]:
+               lst.remove(lst[ind1])
+          ind += 1 
+          ind1 += 1 
 
 print(f'your names list is: {lst}') 
