@@ -1,14 +1,23 @@
 def is_polindrom(n):
-        """this function checs is your sentence polindrom or not."""
-        list = [None] * len(n)
+        lst = []
         i = 0
-        j = len(n) - 1 
         while i < len(n):
-             list[i] = n[j]
-             i += 1 
-             j -= 1 
-        return list == n 
-        
+             string = ' '
+             if (n[i] >= 'a') and (n[i] <= 'Z'):
+                    string += n[i]
+             else:
+                   lst.append(string)
+             i += 1  
+        rev_lst = [None]*len(lst)
+        ind = 0
+        ind1 = len(lst) - 1 
+        while ind1 >= 0:
+             rev_lst[ind] = lst[ind1]
+             ind += 1 
+             ind1 -= 1 
+        if lst == rev_lst:
+              return True
+        return False
+
 sentenses = input("insert the sentence: ")
 print(f'is tour sentence polindrom? {is_polindrom(sentenses)}')
-    
